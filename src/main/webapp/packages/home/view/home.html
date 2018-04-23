@@ -1,0 +1,83 @@
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-v2 blue" href="#">
+            <div class="visual">
+                <i class="icon-users"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="{{auxNum}}">{{auxNum}}</span>
+                </div>
+                <div class="desc"> 辅警人数 </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-v2 red" href="#">
+            <div class="visual">
+                <i class="fa fa-bar-chart-o"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="{{degreeNum}}">{{degreeNum}}</span>本科 </div>
+                <div class="desc"> 学历情况 </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-v2 green" href="#">
+            <div class="visual">
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="{{avgSalary}}">{{avgSalary}}￥</span>
+                </div>
+                <div class="desc"> 平均工资 </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <a class="dashboard-stat dashboard-stat-v2 purple" href="#">
+            <div class="visual">
+                <i class="fa fa-globe"></i>
+            </div>
+            <div class="details">
+                <div class="number">
+                    <span data-counter="counterup" data-value="{{goodPern}}">{{goodPern}}</span>人 </div>
+                <div class="desc"> 党员情况 </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class=" icon-layers font-green-seagreen"></i>
+                    <span class="caption-subject font-green-seagreen bold uppercase">辅警分布情况</span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div id="chart_5" style="height:280px;"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="portlet light portlet-fit bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class=" icon-layers font-yellow-gold"></i>
+                    <span class="caption-subject font-yellow-gold bold uppercase">额定工资情况</span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div id="chart_6" style="height:280px;"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END DASHBOARD STATS 1-->

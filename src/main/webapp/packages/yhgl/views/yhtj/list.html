@@ -1,0 +1,68 @@
+<div class="row">
+    <!--默认的树-->
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-social-dribbble font-blue-sharp"></i>
+                    <span class="caption-subject font-blue-sharp bold uppercase">Default Tree</span>
+                </div>
+                <div class="actions">
+                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                        <i class="icon-cloud-upload"></i>
+                    </a>
+                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                        <i class="icon-wrench"></i>
+                    </a>
+                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                        <i class="icon-trash"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div id="tree_1" class="tree-demo">
+                    <ul>
+                        <li> Root node 1
+                            <ul>
+                                <li data-jstree='{ "selected" : true }'>
+                                    <a href="javascript:;"> Initially selected </a>
+                                </li>
+                                <li data-jstree='{ "icon" : "fa fa-briefcase icon-state-success " }'> custom icon URL </li>
+                                <li data-jstree='{ "opened" : true }'> initially open
+                                    <ul>
+                                        <li data-jstree='{ "disabled" : true }'> Disabled Node </li>
+                                        <li data-jstree='{ "type" : "file" }'> Another node </li>
+                                    </ul>
+                                </li>
+                                <li data-jstree='{ "icon" : "fa fa-warning icon-state-danger" }'> Custom icon class (bootstrap) </li>
+                            </ul>
+                        </li>
+                        <li data-jstree='{ "type" : "file" }'>
+                            <a href="http://www.jstree.com"> Clickanle link node </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="portlet-body">
+            <div id="tree_2" class="tree-demo"> </div>
+        </div>
+    </div>
+</div>
+
+<!--文件上传-->
+<div class="row">
+    <form class="dropzone dropzone-file-area" id="dropz" style="width: 500px; margin-top: 50px;">
+        <h3 class="sbold">Drop files here or click to upload</h3>
+        <p> This is just a demo dropzone. Selected files are not actually uploaded. </p>
+    </form>
+</div>
+
+<script>
+    //初始化树
+    UITree.init(); // init todo page
+    DropZone.init();
+</script>
+

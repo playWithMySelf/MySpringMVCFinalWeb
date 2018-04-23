@@ -1,0 +1,34 @@
+{
+    "yhzs": {
+        "data": {
+            "nav": ["用户管理", "用户展示"],
+            "isBuiltIn": true,
+            "pageTitle": "用户展示",
+            "pageSubTitle": "用户详情展示"
+        },
+        "templateUrl": "packages/yhgl/views/yhzs/main.html",
+        "controller": "YhzsCtrl",
+        "files": [
+            "packages/yhgl/js/yhzs/YhzsCtrl.js",
+            "packages/yhgl/js/yhzs/YhzsModifyCtrl.js"
+        ]
+    },
+    "yhtj": {
+        "data": {
+            "nav": ["用户管理", "用户统计"],
+            "isBuiltIn": true,
+            "pageTitle": "用户统计",
+            "pageSubTitle": "按照年龄、部门进行统计"
+        },
+        "templateUrl": "packages/yhgl/views/yhtj/main.html",
+        "controller": "YhtjCtrl",
+        "remark" : "备注：由于懒加载的缘故，初始化数据需放在此js中，调用放在html中",
+        "files": [
+            "resources/global/plugins/jstree/dist/themes/default/style.min.css",
+            "resources/global/plugins/jstree/dist/jstree.min.js",
+            "resources/global/plugins/jstree/ui-tree.js",
+            "packages/yhgl/js/yhtj/YhtjCtrl.js",
+            "packages/yhgl/js/yhtj/dropzone-init.js"
+        ]
+    }
+}

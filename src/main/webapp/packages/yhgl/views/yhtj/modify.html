@@ -1,0 +1,53 @@
+<div class="modal fade" id="modifyYhzsModalDiv" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" ng-controller="YhzsModifyCtrl">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="close" data-dismiss="modal" aria-hidden="true"></a>
+                <h4 class="modal-title"><i class="icon-puzzle"></i> {{title}}</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form">
+                    <form action="#" class="form-horizontal modifyYhzsForm">
+                        <div class="form-boy">
+                            <div class="alert alert-danger display-hide">
+                                <button class="close" data-close="alert"></button> <i class="fa fa-warning"></i> 请检查输入项. </div>
+                            <div class="alert alert-success display-hide">
+                                <button class="close" data-close="alert"></button> <i class="fa fa-check"></i> 校验通过! </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">用户ID</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" placeholder="用户ID" name="userid" ng-model="entity.userid">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">用户名称</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" placeholder="用户名称" name="username" ng-model="entity.username">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3">用户密码</label>
+                                        <div class="col-md-9">
+                                            <input type="text" class="form-control" placeholder="用户密码" name="password"ng-model="entity.password">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn blue-dark" aria-hidden="true" ng-click="submit()">
+                    <i class="fa fa-save"></i> 保存用户信息</button>
+                <button type="button" class="btn btn-outline dark" data-dismiss="modal" aria-hidden="true"> 关闭</button>
+            </div>
+        </div>
+    </div>
+</div>

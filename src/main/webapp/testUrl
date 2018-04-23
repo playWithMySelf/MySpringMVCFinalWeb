@@ -1,0 +1,11 @@
+用户模块测试地址：
+登陆测试：http://localhost:8080/MySpringMVCFinalWeb/mvc/dispatch?method=UserLoginDb&userId=admin&password=admin
+添加用户：http://localhost:8080/MySpringMVCFinalWeb/mvc/login?method=AddUser&userid=test&password=test&username=测试
+更新用户：http://localhost:8080/MySpringMVCFinalWeb/mvc/login?method=UppUser&userid=test&password=test&username=测试
+删除用户：http://localhost:8080/MySpringMVCFinalWeb/mvc/login?method=DelUser&userid=test&password=test&username=测试
+
+aop测试：
+http://localhost:8080/MySpringMVCFinalWeb/mvc/login?method=AddUser&userid=test&password=test&username=测试
+&log_userid=admin&log_usemoudle=用户管理&log_usefunction=用户登陆&log_optiontype=0&log_optiondata=123&log_remark=
+
+http://localhost:8080/MySpringMVCFinalWeb/mvc/dispatch?controller=login&method=UserLoginDb&userId=admin&password=admin

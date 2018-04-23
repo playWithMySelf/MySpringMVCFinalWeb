@@ -1,0 +1,11 @@
+{
+    "index": {
+        "url": "packages/index/state.json"
+    },
+    "common": {
+        "url": "packages/common/state.json"
+    },
+    "yhgl": {
+        "url": "packages/yhgl/state.json"
+    }
+}
